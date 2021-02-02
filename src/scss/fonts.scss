@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "SpaceMono";
+  src: local("SpaceMono"),
+    url(../fonts/Space_Mono/SpaceMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  font-weight: bold;
+  src: local("SpaceMono"),
+    url(../fonts/Space_Mono/SpaceMono-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  font-style: italic;
+  src: local("SpaceMono"),
+    url(../fonts/Space_Mono/SpaceMono-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  font-weight: bold;
+  font-style: italic;
+  src: local("SpaceMono"),
+    url(../fonts/Space_Mono/SpaceMono-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 100;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 200;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 300;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 500;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 600;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 700;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 800;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 900;
+  src: local("WorkSans"),
+    url(../fonts/Work_Sans/WorkSans-Black.ttf) format("truetype");
+}

@@ -1,0 +1,26 @@
+.header {
+  background-color: $color-purple;
+  background-image: url(../../svg/circle.svg), url(../../svg/triangle.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 300px, 200px;
+  background-position: 85% 140%, 87.5% 100%;
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  &__title {
+    font-size: 5rem;
+    color: $color-white;
+    font-family: WorkSans;
+    font-weight: 300;
+    & span {
+      font-family: SpaceMono;
+      font-weight: bold;
+      background-image: url(../../svg/circle.svg);
+      background-size: cover;
+      background-position: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
