@@ -19,7 +19,7 @@ class App extends Component {
         <Navbar />
         <Header />
         <Container>
-          {this.state.podcasts.map((podcast, i) => (
+          {this.state.podcasts.slice(0, 5).map((podcast, i) => (
             <Podcast
               key={podcast.id}
               number={i + 1}

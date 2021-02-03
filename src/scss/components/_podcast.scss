@@ -1,14 +1,19 @@
 .podcast {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 4rem;
+  max-width: 1000px;
+  @include respond(phone) {
+    width: 100%;
+  }
   &__number {
     position: relative;
-    font-size: 5rem;
-    height: 7rem;
-    width: 7rem;
+    font-size: 3rem;
+    height: 5rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +21,11 @@
     color: $color-white;
     font-family: SpaceMono;
     font-weight: bold;
+    @include respond(phone) {
+      position: absolute;
+      top: -2.5rem;
+      left: -0.5rem;
+    }
     &::after {
       position: absolute;
       content: "";
@@ -31,33 +41,98 @@
     }
   }
   &__body {
-    width: 80%;
+    width: calc(100% - 12rem);
+    background-color: $color-white;
     display: flex;
     border-radius: 4px;
-    box-shadow: 0 0 2rem rgba($color-purple, 50%);
+    box-shadow: 0 0 2rem rgba($color-purple-light, 50%);
+    @include respond(phone) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
   }
   &__image {
-    width: 150px;
-    margin: 4rem 4rem 4rem -4rem;
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem 3rem 3rem -3rem;
+    @include respond(phone) {
+      width: 10rem;
+      height: 10rem;
+      margin: 3rem 2rem 0rem -1rem;
+    }
   }
   &__details {
     width: 50%;
+    font-family: SpaceMono;
+    line-height: 1;
+    padding: 3rem 0;
+    @include respond(phone) {
+      width: calc(100% - 14rem);
+      padding: 3rem 0;
+    }
     &--title {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
     }
     &--publisher {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      & span {
+        color: $color-purple-light;
+      }
     }
     &--episodes {
+      font-size: 1.2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $color-gray;
     }
   }
   &__links {
+    width: 100%;
+    display: flex;
   }
   &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-gray;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
     &--svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 0.5rem;
     }
   }
   &__description {
-    width: 30%;
-    &--text {
+    width: 40%;
+    line-height: 1.2;
+    padding: 3rem;
+    font-family: SpaceMono;
+    font-size: 1.4rem;
+    @include respond(phone) {
+      width: 100%;
+      padding: 0 3rem 3rem;
+    }
+  }
+  &:nth-child(3) .podcast__details--title {
+    @include respond(desktop) {
+      color: $color-gray;
+    }
+  }
+  &:nth-child(3) .podcast__details--publisher span,
+  &:nth-child(3) .podcast__link {
+    @include respond(desktop) {
+      color: $color-orange;
+    }
+  }
+  &:nth-child(3) .podcast__link--svg {
+    @include respond(desktop) {
+      filter: invert(56%) sepia(60%) saturate(543%) hue-rotate(338deg)
+        brightness(99%) contrast(100%);
     }
   }
 }
