@@ -4,7 +4,7 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   max-width: 1000px;
   @include respond(phone) {
     width: 100%;
@@ -17,27 +17,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     color: $color-white;
     font-family: SpaceMono;
     font-weight: bold;
+    background-image: linear-gradient($color-orange, $color-purple-light);
+    border-radius: 100%;
     @include respond(phone) {
       position: absolute;
       top: -2.5rem;
       left: -0.5rem;
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url(../../svg/circle.svg);
-      background-size: cover;
-      transform: rotate(90deg);
-      filter: contrast(1.5);
-      z-index: -1;
     }
   }
   &__body {
@@ -45,7 +33,7 @@
     background-color: $color-white;
     display: flex;
     border-radius: 4px;
-    box-shadow: 0 0 2rem rgba($color-purple-light, 50%);
+    box-shadow: 0 0 1rem rgba($color-purple-light, 25%);
     @include respond(phone) {
       width: 100%;
       flex-wrap: wrap;
@@ -133,6 +121,11 @@
     @include respond(desktop) {
       filter: invert(56%) sepia(60%) saturate(543%) hue-rotate(338deg)
         brightness(99%) contrast(100%);
+    }
+  }
+  &:nth-child(5) .podcast__number {
+    @include respond(phone) {
+      top: -5rem;
     }
   }
 }

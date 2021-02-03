@@ -24,6 +24,11 @@
       font-family: SpaceMono;
       font-weight: bold;
       background-image: url(../../svg/circle.svg);
+      background-image: linear-gradient(
+        90deg,
+        $color-orange,
+        $color-purple-light
+      );
       background-size: cover;
       background-position: center;
       white-space: nowrap;
