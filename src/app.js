@@ -6,8 +6,6 @@ import Podcast from "./components/podcast";
 import SampleAPI from "./sample-api-response.json";
 import "./scss/main.scss";
 
-console.log(SampleAPI.podcasts);
-
 class App extends Component {
   state = {
     podcasts: SampleAPI.podcasts,
@@ -32,7 +30,6 @@ class App extends Component {
             />
           ))}
         </Container>
-        <p>hello world</p>
       </div>
     );
   }
